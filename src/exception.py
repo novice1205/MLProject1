@@ -1,4 +1,5 @@
 import logging
+from src.logger import logging
 import sys
 
 def error_message_detail(error,error_info:sys):
@@ -23,5 +24,5 @@ if __name__ == "__main__":
         a = 1/0
     except Exception as e:
         logging.info("Division by Zero Error")
-        logging.error("An error occured",exc_info=True)
+        # logging.error("An error occured",exc_info=True)
         raise CustomException(e,sys)
