@@ -38,4 +38,4 @@ def predict_datapoint():
         return render_template('home.html',results=results[0])
     
 
-app.run(debug=True, port=3000)
+app.run(port=3000)
